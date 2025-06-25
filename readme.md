@@ -4,12 +4,11 @@ A tool for converting BIP39 mnemonic phrases to addresses and private keys.
 
 ## Online Version
 
-https://iancoleman.io/bip39/
+https://pepeenthusiast.github.io/bip39-pepecoin/
 
 ## Standalone offline version
 
-Download `bip39-standalone.html` from
-[the releases](https://github.com/iancoleman/bip39/releases).
+Download [`index.html`](https://github.com/PepeEnthusiast/bip39-pepecoin/raw/refs/heads/gh-pages/index.html) from the gh-pages branch.
 
 Open the file in a browser by double clicking it.
 
