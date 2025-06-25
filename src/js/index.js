@@ -193,6 +193,10 @@
         hideValidationError();
         populateNetworkSelect();
         populateClientSelect();
+
+        network = networks.find(n => n.name == "PEPE - Pepecoin");
+        network.onSelect();
+        //networkChanged({target: { value: networks.indexOf(network) }});
     }
 
     // Event handlers
@@ -1689,7 +1693,7 @@
             var option = $("<option>");
             option.attr("value", i);
             option.text(network.name);
-            if (network.name == "BTC - Bitcoin") {
+            if (network.name == "PEPE - Pepecoin") {
                 option.prop("selected", true);
             }
             DOM.phraseNetwork.append(option);
@@ -3242,6 +3246,20 @@
             onSelect: function() {
                 network = libs.bitcoin.networks.particl;
                 setHdCoin(44);
+            },
+        },
+        {
+            name: "PEPE - Pepecoin",
+            onSelect: function() {
+                network = libs.bitcoin.networks.pepecoin;
+                setHdCoin(3434);
+            },
+        },
+        {
+            name: "PEPEt - Pepecoin Testnet",
+            onSelect: function() {
+                network = libs.bitcoin.networks.pepecointestnet;
+                setHdCoin(1);
             },
         },
         {
