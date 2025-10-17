@@ -193,6 +193,17 @@ libs.bitcoin.networks.dogecointestnet = {
   wif: 0xf1
 };
 
+libs.bitcoin.networks.pepecoinclassic = {
+  messagePrefix: '\x19Pepecoin Signed Message:\n',
+  bip32: {
+    public: 0x02facafd,
+    private: 0x02fac398
+  },
+  pubKeyHash: 0x38,
+  scriptHash: 0x16,
+  wif: 0x9e
+};
+
 libs.bitcoin.networks.pepecoin = {
   messagePrefix: '\x19Pepecoin Signed Message:\n',
   bip32: {

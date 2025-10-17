@@ -3256,6 +3256,13 @@
             },
         },
         {
+            name: "PEPEc - Pepecoin Classic",
+            onSelect: function() {
+                network = libs.bitcoin.networks.pepecoinclassic;
+                setHdCoin(3434);
+            },
+        },
+        {
             name: "PEPEt - Pepecoin Testnet",
             onSelect: function() {
                 network = libs.bitcoin.networks.pepecointestnet;
